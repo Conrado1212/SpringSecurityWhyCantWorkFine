@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- Database Connection settings -->
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/test</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password"></property>
+
+        <!-- Echo SQL wyswietlenie zapytania tabeli bazy danych -->
+        <property name="hibernate.show_sql">true</property>
+
+        <!-- SQL Dialect implementacja silnika bazo danego  -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+
+        <!-- database intialize -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- mappings -->
+        <mapping class="pl.edu.wszib.model.Vehicle" />
+        <mapping class="pl.edu.wszib.model.User" />
+        <mapping class="pl.edu.wszib.model.GroupVehicle" />
+        <mapping class="pl.edu.wszib.model.Rent" />
+        <mapping class="pl.edu.wszib.model.Buy" />
+    </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+
+    background-color: #303030;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    margin: 0 !important;
+
+
+}
+.container{
+    width: 100%;
+    height: 930px;
+}
+
+.hero{
+    height:100%;
+}
+.header{
+    width: 100%;
+    padding: 40px 0;
+}
+.form-box{
+    width: 380px;
+    height: 740px;
+    position: relative;
+    margin: 6% auto;
+    background: #C0C0C0;
+    padding: 5px;
+    overflow:hidden
+
+}
+
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #696969;
+    border-radius:30px;
+    color: #fff;
+}
+
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border:0;
+    outline: none;
+    position: relative;
+    color:#fff;
+}
+
+#btn{
+    top: 0;
+    left:0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #000000, 	#808080);
+    border-radius: 30px;
+    transition: .5s;
+}
+.socials{
+
+    width: 100%;
+    text-align: center;
+    background-color: #292929;
+}
+.socialdivs{
+    width:500px;
+    marign-left:auto;
+    margin-right:auto;
+
+}
+.fb{
+    width:130px;
+    height:50px;
+    float:left;
+}
+
+.fb:hover{
+    background-color: #4668b3;
+}
+
+.gmail{
+    width:130px;
+    height:50px;
+    float:left;
+}
+
+.gmail:hover{
+    background-color: #d44638;
+}
+
+.tw{
+    width:130px;
+    height:50px;
+    float:left;
+}
+
+.tw:hover{
+    background-color: #3095d3;
+}
+
+
+
+.input-group{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.input-field{
+    width:100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top:0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+
+}
+.submit-btn{
+    width:85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #000000, 	#808080);
+    border:0;
+    outline:none;
+    border-radius: 30px;
+    color:#fff;
+}
+.chech-box{
+    margin: 30px 10px 30px 0;
+
+
+}
+.span1{
+    color: #777;
+    font-size: 12px;
+    bottom:68px;
+    position: absolute;
+
+
+}
+
+#login{
+    left: 50px;
+}
+
+#register{
+    left: 450px;
+}
+
+.logo{
+
+    width: 450px;
+    font-size: 48px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer{
+    text-align: center;
+    background-color: #222222;
+    padding: 40px;
+
+}
+a{
+    color:#fff;
+    text-decoration: none;
+    display: block;
+}
+
+span{
+
+}
+#label{
+    background-color: #303030;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    margin: 0 !important;
+}
+#error-message {
+    color: red;
+    font-size: 18px;
+}

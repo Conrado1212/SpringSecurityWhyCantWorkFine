@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Result get  user</title>
+
+    <meta name="description" content="Wypozyczalnia pojazdow elektrycznych" />
+    <meta name="keywords" content="hulajnogi, samochody, wypozyczalnia, deskorolki " />
+
+    <link href="style/styleAll.css" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href="css/fontello.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="logo">
+            <img src="img/scooter.png"  />
+            <span style="color: #808080"> Rent</span>App.com
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+    <div class="nav">
+        <ol>
+            <li><a href="/rentAppPage">Main Page</a></li>
+            <li><a href="/allScooter">Scooters</a>
+                <ul>
+                    <li><a href="/addVehicle">Add Vehicle</a> </li>
+                    <li><a href="/getVehicle">Get Vehicle </a> </li>
+                    <li><a href="/updateVehicle">Update Vehicle</a> </li>
+                    <li><a href="/removeVehicle">Remove Vehicle</a> </li>
+                    <li><a href="/distance">Check distance</a> </li>
+                    <li><a href="/buy">Buy Vehicle</a> </li>
+                    <li><a href="/price">Check price</a> </li>
+                    <li><a href="/rent">Rent Vehicle</a> </li>
+                </ul>
+            </li>
+            <li><a href="/allCar">Cars</a>
+                <ul>
+                    <li><a href="/addVehicle">Add Vehicle</a> </li>
+                    <li><a href="/getVehicle">Get Vehicle</a> </li>
+                    <li><a href="/updateVehicle">Update Vehicle</a> </li>
+                    <li><a href="/removeVehicle">Remove Vehicle</a> </li>
+                    <li><a href="/distance">Check distance</a> </li>
+                    <li><a href="/buy">Buy Vehicle</a> </li>
+                    <li><a href="/price">Check price</a> </li>
+                    <li><a href="/rent">Rent Vehicle</a> </li>
+                </ul>
+            </li>
+            <li><a href="/allBike">Bikes</a>
+                <ul>
+                    <li><a href="/addVehicle">Add Vehicle</a> </li>
+                    <li><a href="/getVehicle">Get Vehicle</a> </li>
+                    <li><a href="/updateVehicle">Update Vehicle</a> </li>
+                    <li><a href="/removeVehicle">Remove Vehicle</a> </li>
+                    <li><a href="/distance">Check distance</a> </li>
+                    <li><a href="/buy">Buy Vehicle</a> </li>
+                    <li><a href="/price">Check price</a> </li>
+                    <li><a href="/rent">Rent Vehicle</a> </li>
+                </ul>
+            </li>
+            <li><a href="/allMotorBike">MotorBikes</a>
+                <ul>
+                    <li><a href="/addVehicle">Add Vehicle</a> </li>
+                    <li><a href="/getVehicle">Get Vehicle</a> </li>
+                    <li><a href="/updateVehicle">Update Vehicle</a> </li>
+                    <li><a href="/removeVehicle">Remove Vehicle</a> </li>
+                    <li><a href="/distance">Check distance</a> </li>
+                    <li><a href="/buy">Buy Vehicle</a> </li>
+                    <li><a href="/price">Check price</a> </li>
+                    <li><a href="/rent">Rent Vehicle</a> </li>
+                </ul>
+            </li>
+            <li><a href="/allUser">Users</a>
+                <ul>
+                    <li><a href="/addUser">Add User</a> </li>
+                    <li><a href="/getUser">Get User</a> </li>
+                    <li><a href="/updateUser">Update User</a> </li>
+                    <li><a href="/removeUser">Remove User</a> </li>
+                </ul>
+            </li>
+            <li><a href="/user">Profil</a>
+
+            </li>
+
+            <li><a href="/login">Log out</a>
+            </li>
+        </ol>
+    </div>
+    <div class="content">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" >User  </button>
+            </div>
+
+            <table class="content-table">
+                <thead>
+                <tr>
+                    <th>IdUser</th>
+                    <th>username</th>
+                    <th>password</th>
+                    <th>name</th>
+                    <th>surname</th>
+                    <th>email </th>
+                    <th>Latitude</th>
+                    <th>Longitude</th>
+                    <th>Role</th>
+                    <th>Location Name</th>
+
+                </tr>
+                </thead>
+                <tbody>
+                <div th:each="user: ${user}">
+                    <tr class="active-row">
+                        <td><div th:text="'idUser: '+${result.idUser}"></div></td>
+                        <td><div th:text="'username: '+${result.username}"></div></td>
+                        <td><div th:text="'password: '+${result.password}"></div></td>
+                        <td><div th:text="'name: '+${result.name}"></div></td>
+                        <td><div th:text="'surname: '+${result.surname}"></div></td>
+                        <td><div th:text="'email: '+${result.email}"></div></td>
+                        <td><div th:text="'latitude: '+${result.latitude}"></div></td>
+                        <td><div th:text="'longitude: '+${result.longitude}"></div></td>
+                        <td><div th:text="'role: '+${result.role}"></div></td>
+                        <td><div th:text="'locationName: '+${result.locationName}"></div></td>
+
+                    </tr>
+                </div>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+    <div class="social">
+        <div class="socialdiv">
+            <div class="fb">
+                <a href=" https://www.facebook.com/"><i class="icon-facebook-squared"></i></a>
+            </div>
+            <div class="yt">
+                <a href="https://www.youtube.com/"><i class="icon-youtube-play"></i></a>
+            </div>
+            <div class="tw">
+                <a href="https://www.twitch.tv/"><i class="icon-twitch"></i></a>
+            </div>
+            <div class="am">
+                <a href="https://www.amazon.de/"><i class="icon-amazon"></i></a>
+
+            </div>
+            <div style="clear: both"> </div>
+        </div>
+    </div>
+    <div class="footer">RentApp.com &copy; 2020 Thank you for your visit</div>
+</div>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script>
+
+    $(document).ready(function() {
+        var NavY = $('.nav').offset().top;
+
+        var stickyNav = function(){
+            var ScrollY = $(window).scrollTop();
+
+            if (ScrollY > NavY) {
+                $('.nav').addClass('sticky');
+            } else {
+                $('.nav').removeClass('sticky');
+            }
+        };
+
+        stickyNav();
+
+        $(window).scroll(function() {
+            stickyNav();
+        });
+    });
+
+</script>
+
+</body>
+</html>

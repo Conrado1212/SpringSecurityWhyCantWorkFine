@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Login</title>
+
+
+    <meta name="description" content="Wypozyczalnia pojazdow elektrycznych" />
+    <meta name="keywords" content="hulajnogi, samochody, wypozyczalnia, deskorolki " />
+    <link rel="stylesheet" href="style/styleLogin.css"  >
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href="css/fontello.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="logo">
+            <img src="img/scooter.png"  />
+            <span style="color: #808080"> Rent</span>App.com
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" >Log in</button>
+                <button type="button" class="toggle-btn" ><a href="/register">Register</a></button>
+            </div>
+            <div class="socials">
+                <div class="socialdivs">
+                    <div class="fb">
+                        <a href=" https://www.facebook.com/"><i class="icon-facebook-squared1"></i></a>
+                    </div>
+                    <div class="gmail">
+                        <a href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><i class="icon-mail-alt"></i></a>
+                    </div>
+                    <div class="tw">
+                        <a href="https://twitter.com/?lang=pl"><i class="icon-twitter"></i></a>
+                    </div>
+                    <div style="clear:both"></div>
+                </div>
+            </div>
+            <form action="/authenticate" method="post" id="login" class="input-group">
+                <div th:text="${errorMessage}" id="error-message"></div>
+                <input type="text" class="input-field" placeholder="Enter username" name="username" th:field="*{userModel.username}"  required>
+                <input type="password" class="input-field" placeholder="Enter password"  name="password" th:field="*{userModel.password}"required>
+                <input type="checkbox" class="chech-box"><span class="span1">Remember password</span>
+                <button type="submit" class="submit-btn">Log in</button>
+            </form>
+        </div>
+
+    </div>
+    <div class="footer">RentApp.com &copy; 2020 Thank you for your visit</div>
+</div>
+<script>
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+    var z = document.getElementById("btn");
+
+
+    function register(){
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+    }
+
+
+    function login(){
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0";
+    }
+</script>
+</body>
+</html>

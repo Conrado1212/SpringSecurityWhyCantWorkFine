@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>rentAppPage</title>
+
+    <meta name="description" content="Wypozyczalnia pojazdow elektrycznych" />
+    <meta name="keywords" content="hulajnogi, samochody, wypozyczalnia, deskorolki " />
+
+    <link href="style/style.css" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href="css/fontello.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="logo">
+            <img src="img/scooter.png"  />
+            <span style="color: #808080"> Rent</span>App.com
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+    <div class="nav">
+        <ol>
+            <li><a href="/rentAppPage">Main Page</a></li>
+            <li><a href="/allScooter">Scooters</a>
+                <ul>
+                    <li><a href="/addVehicle">Add Vehicle</a> </li>
+                    <li><a href="/getVehicle">Get Vehicle</a> </li>
+                    <li><a href="/updateVehicle">Update Vehicle </a> </li>
+                    <li><a href="/removeVehicle">Remove Vehicle</a> </li>
+                    <li><a href="/distance">Check Distance</a> </li>
+                    <li><a href="/buy">Buy Vehicle</a> </li>
+                    <li><a href="/price">Check price</a> </li>
+                    <li><a href="/rent">Rent Vehicle</a> </li>
+                </ul>
+            </li>
+            <li><a href="/allCar">Cars</a>
+                <ul>
+                    <li><a href="/addVehicle">Add Vehicle</a> </li>
+                    <li><a href="/getVehicle">Get Vehicle</a> </li>
+                    <li><a href="/updateVehicle">Update Vehicle</a> </li>
+                     <li><a href="/removeVehicle">Remove Vehicle </a></li>
+                    <li><a href="/distance">Check distance</a> </li>
+                    <li><a href="/buy">Buy Vehicle</a> </li>
+                    <li><a href="/price">Check price</a> </li>
+                    <li><a href="/rent">Rent Vehicle</a> </li>
+                </ul>
+            </li>
+            <li><a href="/allBike">Bikes</a>
+                <ul>
+                    <li><a href="/addVehicle">Add Vehicle</a> </li>
+                    <li><a href="/getVehicle">Get Vehicle</a> </li>
+                    <li><a href="/updateVehicle">Update Vehicle</a> </li>
+                    <li><a href="/removeVehicle">Remove Vehicle</a> </li>
+                    <li><a href="/distance">Check distance</a> </li>
+                    <li><a href="/buy">Buy Vehicle</a> </li>
+                    <li><a href="/price">Check price</a> </li>
+                    <li><a href="/rent">Rent Vehicle</a> </li>
+                </ul>
+            </li>
+            <li><a href="/allMotorBike">MotorBikes</a>
+                <ul>
+                    <li><a href="/addVehicle">Add Vehicle</a> </li>
+                    <li><a href="/getVehicle">Get Vehicle</a> </li>
+                    <li><a href="/updateVehicle">Update Vehicle</a> </li>
+                    <li><a href="/removeVehicle">Remove Vehicle</a> </li>
+                    <li><a href="/distance">Check distance</a> </li>
+                    <li><a href="/buy">Buy Vehicle</a> </li>
+                    <li><a href="/price">Check price</a> </li>
+                    <li><a href="/rent">Rent Vehicle</a> </li>
+                </ul>
+            </li>
+            <li><a href="/allUser">Users</a>
+                <ul>
+                    <li><a href="/addUser">Add User</a> </li>
+                    <li><a href="/getUser">Get User</a> </li>
+                    <li><a href="/updateUser">Update User</a> </li>
+                    <li><a href="/removeUser">Remove User</a> </li>
+                </ul>
+            </li>
+            <li><a href="/user">Profil</a>
+
+            </li>
+            <li><a href="/login">Log out</a>
+            </li>
+        </ol>
+    </div>
+    <div th:text="'Hello: ' + ${username}"></div>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nisi mauris, imperdiet ut risus ut, pellentesque sodales urna. Nullam ut commodo nulla, at mattis elit. Suspendisse ut tellus eros. Donec convallis luctus elit nec tincidunt. Pellentesque vehicula pulvinar tempor. Fusce vitae justo quis nisi condimentum ultrices eu eu sem. Integer faucibus arcu a lacus varius facilisis. Maecenas posuere molestie nisi et pellentesque. Aliquam molestie urna sodales viverra mollis. Nunc eget erat lorem. Sed pretium ligula imperdiet nisi ultricies eleifend. Pellentesque at condimentum urna. In luctus consectetur tortor, a suscipit enim aliquet ut. Curabitur dictum, turpis vel faucibus auctor, tortor purus auctor justo, at hendrerit quam sem et turpis. Nullam vel odio viverra, porttitor ipsum eget, sodales urna. Cras id lectus ex.</p>
+
+        <p>Aliquam maximus sem nec auctor sollicitudin. Maecenas dignissim odio quis turpis eleifend, sed porta est bibendum. Nulla facilisi. Aenean quis posuere ante. Maecenas lobortis sodales felis ut rhoncus. Donec semper mi aliquet lacus aliquet interdum. Fusce ultrices euismod nunc vel mattis. Nam tortor erat, placerat at felis a, maximus mollis ex. Integer varius dolor nec sapien commodo, sed lacinia nibh egestas. Curabitur nec est augue. Cras hendrerit dolor ante, id suscipit neque congue finibus. Vivamus vitae nibh id est varius consequat. Quisque placerat justo diam, ac bibendum tellus pharetra id. Mauris pulvinar feugiat ultrices.</p>
+
+        <p> Etiam quis dapibus nulla. Sed fringilla turpis at est tempus tempus. Curabitur quis urna condimentum, aliquam diam non, rutrum enim. Nulla facilisi. Sed vel volutpat velit. Nullam faucibus sed dolor at molestie. Ut vehicula sem eget ante bibendum, vitae facilisis nulla luctus. Praesent rutrum orci quam. Nunc id lectus sagittis, porta quam sit amet, ullamcorper enim. Integer fermentum magna orci, volutpat finibus purus efficitur id. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam tincidunt lacus ut massa blandit tempus. Nulla vitae ligula eros. Integer lobortis dolor odio, sed volutpat nibh malesuada vitae.</p>
+
+        <p> Nulla blandit auctor ipsum, ut vulputate metus elementum non. Ut a lobortis risus. Praesent ultrices nibh vel mi vestibulum, at sollicitudin lacus consectetur. Integer dictum arcu diam, vitae lobortis mi fermentum nec. Sed consequat ornare sem, vel iaculis ligula congue at. Aliquam at nisl mauris. Ut a rutrum nibh. Aenean bibendum purus pretium lacus aliquam luctus. Suspendisse fringilla vestibulum turpis eu ultrices. Donec nec turpis nulla. Praesent ut lobortis lorem, vel vulputate ex. Curabitur dapibus accumsan rutrum.</p>
+
+        <p> Etiam sed vulputate lacus. Praesent eleifend tellus sed commodo pulvinar. Vestibulum velit magna, consectetur at metus ullamcorper, pellentesque dictum elit. Vivamus non felis ac tortor pretium facilisis. In vitae mi felis. Quisque rhoncus odio ut sapien lobortis sodales. Aenean dignissim lorem id nisl pretium, at gravida nisl finibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ex mi, tincidunt non pharetra non, vulputate sit amet odio.</p>
+    </div>
+    <div class="social">
+        <div class="socialdiv">
+            <div class="fb">
+                <a href=" https://www.facebook.com/"><i class="icon-facebook-squared"></i></a>
+            </div>
+            <div class="yt">
+                <a href="https://www.youtube.com/"><i class="icon-youtube-play"></i></a>
+            </div>
+            <div class="tw">
+                <a href="https://www.twitch.tv/"><i class="icon-twitch"></i></a>
+            </div>
+            <div class="am">
+                <a href="https://www.amazon.de/"><i class="icon-amazon"></i></a>
+
+            </div>
+            <div style="clear: both"> </div>
+        </div>
+    </div>
+    <div class="footer">RentApp.com &copy; 2020 Thank you for your visit</div>
+</div>
+<script  src="js/jquery-1.11.3.min.js"></script>
+<script>
+
+    $(document).ready(function() {
+        var NavY = $('.nav').offset().top;
+
+        var stickyNav = function(){
+            var ScrollY = $(window).scrollTop();
+
+            if (ScrollY > NavY) {
+                $('.nav').addClass('sticky');
+            } else {
+                $('.nav').removeClass('sticky');
+            }
+        };
+
+        stickyNav();
+
+        $(window).scroll(function() {
+            stickyNav();
+        });
+    });
+
+</script>
+</body>
+</html>
